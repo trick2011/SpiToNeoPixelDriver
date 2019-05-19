@@ -63,8 +63,8 @@ BEGIN
 	tr_Clk_Count <= r_Clk_Count;
 	t1 <= T1T;
 	t0 <= T0T;
-	One  : NeopixelBit PORT MAP(clk,one_reset, one_ready, output_one, T1H,T1L);
-	Zero : NeopixelBit PORT MAP(clk,zero_reset,zero_ready,output_zero,T0H,T0L);
+	One  : NeopixelBit PORT MAP(clk,one_reset, open,output_one, T1H,T1L);
+	Zero : NeopixelBit PORT MAP(clk,zero_reset,open,output_zero,T0H,T0L);
 	
 	to1 <= output_one;
 	to0 <= output_zero;

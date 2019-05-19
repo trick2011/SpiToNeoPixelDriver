@@ -30,8 +30,7 @@ ARCHITECTURE rtl OF NeopixelRGB IS
 			to1				: OUT STD_LOGIC;
 			to0				: OUT STD_LOGIC;
 			stateIndicator	: OUT integer RANGE 0 TO 8 := 0;
-			Z		 			: OUT STD_LOGIC;
-			counter_temp 	: OUT UNSIGNED(20 downto 0));
+			Z		 			: OUT STD_LOGIC);
 	END COMPONENT NeopixelByte;
  
 	
